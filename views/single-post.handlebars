@@ -1,0 +1,26 @@
+{{> post-details post}}
+
+<h1>COMMENTS</h1>
+<p>View comments on this post below.</p>
+
+<div class="single-post-comments">
+{{> comments post.comments}}
+</div>
+
+{{#if loggedIn}}
+<div class="add-comments">
+<h1>ADD A COMMENT</h1>
+<p>Add your own comments on this post below.</p>
+<form class="comment-form">
+        <div>
+            <label for="comment-text">Comment</label>
+            <input class="input" type="text" id="comment-text" name="comment-text" placeholder="Add Comment Here"/>
+        </div>
+        <button type="submit" class="btn btn-primary">Post Comment!</button>
+</form>
+{{/if}}
+</div>
+
+{{#if loggedIn}}
+<script src="/js/comment.js"></script>
+{{/if}}

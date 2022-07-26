@@ -1,0 +1,27 @@
+{{> post-details post}}
+
+<div class="lightblu">
+<h1>EDIT THIS POST</h1>
+<p>Edit this post by filling out the form below.</p>
+</div>
+
+<form class="edit-post">
+    <div class="form-group">
+        <label for="post-title">Title</label>
+        <input class="input" type="text" class="form-control" id="post-title" name="post-title" placeholder="Add Title of Post here">
+    </div>
+    <div class="form-group">
+        <label for="post-content">Content</label>
+        <input class="input" type="text" class="form-control"  id="post-content" name="post-content" placeholder="Update Post Contents here">
+    </div>
+        <button type="submit" class="btn btn-primary">Update Post</button>
+</form>
+
+<div class="delete-post">
+<h1>DELETE THIS POST</h1>
+<p>You can delete this post by clicking the button below.</p>
+<button type="button" class="btn btn-primary delete-post-btn">Delete Post</button>
+</div>
+
+<script src="/js/edit-post.js"></script>
+<script src="/js/delete-post.js"></script>

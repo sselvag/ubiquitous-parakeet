@@ -1,0 +1,23 @@
+<section class="section">
+<H1> YOUR POSTS </H1>
+<a href="/dashboard/create/">
+<button id="create-post" class="btn btn-primary">Create a Post</button>
+</a>
+</section>
+
+
+{{#each posts as |post|}}
+<div class="edit-post-1">
+
+<a href="/dashboard/edit/{{post.id}}">
+<button id="edit-post-2" class="btn btn-primary">Edit Post With Title = "{{post.title}}"</button>
+</a>
+
+</div>
+{{> post-details post}}
+
+
+
+{{else}}
+<h1>There are no posts to display!!</h1>
+{{/each}}

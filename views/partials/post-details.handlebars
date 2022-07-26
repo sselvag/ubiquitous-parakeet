@@ -1,0 +1,17 @@
+<!--Start of singular post div-->
+<div class="jumbotron" id="blog-post"> 
+<a href="/post/{{id}}"><h1 class="display-4" id="blog-post-title">{{title}}</h1></a>
+<p class="lead" id="blog-post-topic-author">Posted by {{user.name}} on {{format_date createdAt}}</p>
+<hr class="my-4">
+<p>{{post_text}}</p>
+
+<a href="/post/{{id}}">view {{comments.length}} {{format_plural "comment" comments.length}}</a>
+</div>
+
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+<script src="/js/comment.js"></script>
+{{/if}}
+
+<!--End of singular post div-->
