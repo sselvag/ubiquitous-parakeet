@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <title>The Tech Blog</title>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">The Tech Blog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        {{#if loggedIn}}
+        <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/dashboard" id="dashboard">Dashboard</a>
+        <a class="nav-link" href="/dashboard/create/" id="createPost">Create a Post</a>
+        <a class="nav-link" href="api/users/logout" id="logout">Logout</a>
+        {{else}}
+        <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/login" id="login">Login</a>
+        <a class="nav-link" href="/signup" id="signup">Signup</a>
+        {{/if}}
+      </div>
+    </div>
+  </nav>
+
+<body>
+    <div class="posts-section">
+        {{{ body }}}
+    </div>
+    <!--End of the posts-section container-->
+</body>
+
+{{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+{{/if}}
+
+</html>
