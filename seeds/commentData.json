@@ -1,0 +1,42 @@
+[
+    {
+      "user_id": 1,
+      "post_id": 9,
+      "comment_content": "nice post!"
+    },
+    {
+        "user_id": 2,
+        "post_id": 8,
+        "comment_content": "nice post, brother!"
+    },
+    {
+        "user_id": 3,
+        "post_id": 7,
+        "comment_content": "absolutely love this post!"
+    },
+    {
+        "user_id": 4,
+        "post_id": 6,
+        "comment_content": "watch yourself with this one pls!"
+    },
+    {
+        "user_id": 5,
+        "post_id": 5,
+        "comment_content": "nice job on this"
+    },
+    {
+        "user_id": 1,
+        "post_id": 4,
+        "comment_content": "thanks for posting, this was very helpful!"
+    },
+    {
+        "user_id": 2,
+        "post_id": 3,
+        "comment_content": "YOU THE MAN!!"
+    },
+    {
+        "user_id": 3,
+        "post_id": 2,
+        "comment_content": "great job on this post!"
+    }
+]
